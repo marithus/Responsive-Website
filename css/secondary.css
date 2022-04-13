@@ -1,0 +1,415 @@
+	/*********************************************************************************/
+	/* General Styles                                                                        */
+	/*********************************************************************************/
+	html,
+	body {
+		height: 100%;
+	}
+
+	body {
+		margin: 0px;
+		padding: 0px;
+		background: #000000;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 17px;
+		font-weight: 300;
+		box-sizing: border-box;
+		color: #000000;
+	}
+
+	h1,
+	h2,
+	h3 {
+		margin: 0;
+		padding: 0;
+	}
+
+	p,
+	ol,
+	ul {
+		margin-top: 0;
+	}
+
+	ol,
+	ul {
+		padding: 0;
+		list-style: none;
+	}
+
+	p {
+		line-height: 180%;
+	}
+
+	a {
+		color: #151515;
+
+	}
+
+	a:hover {
+		text-decoration: none;
+
+	}
+
+	.container {
+		overflow: hidden;
+		margin: 0em auto;
+		width: 1100px;
+	}
+
+	/*********************************************************************************/
+	/* Button Styles                                                                   */
+	/*********************************************************************************/
+	.button {
+		display: inline-block;
+		margin-top: 2em;
+		padding: 1em 2em 1em 2em;
+		background: #000000;
+		border-radius: 7px;
+		border: 1px solid #373F34;
+		letter-spacing: 0.20em;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 0.90em;
+		color: #FFF;
+		transition: all 0.4s ease 0s;
+	}
+
+	.button:hover {
+		text-decoration: none;
+		background-color: #ddd;
+		color: black
+	}
+
+	.button:before {
+		display: inline-block;
+		background: #FFC31F;
+		margin-right: 1em;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 20px;
+		text-align: center;
+		color: #000000;
+	}
+
+	/*********************************************************************************/
+	/* Header Styles                                                                 */
+	/*********************************************************************************/
+
+	#header-wrapper {
+		overflow: hidden;
+		background: url(pic01.jpg) no-repeat center;
+		background-size: 100% auto;
+		font-size: 20px;
+	}
+
+	#header {
+		overflow: hidden;
+		position: relative;
+		padding: 5em 0em;
+	}
+
+	/*********************************************************************************/
+	/* Logo/Name of Website Styles                                                   */
+	/*********************************************************************************/
+
+	#logo {
+		position: absolute;
+		top: 2.5em;
+		left: 0px;
+	}
+
+	#logo h1 {
+		letter-spacing: 0.10em;
+		font-size: 2.5em;
+		font-weight: 600;
+	}
+
+	#logo a {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #FFF;
+	}
+
+	/*********************************************************************************/
+	/* Navigation Menu Styles. Referenced and adapted from Online Tutorials          */
+	/*********************************************************************************/
+	nav {
+		text-align: center;
+		width: 100%;
+	}
+
+	label {
+		margin: 0 40px 0 0;
+		font-size: 20px;
+		text-align: right;
+		display: none;
+	}
+
+	#toggle {
+		display: none;
+	}
+
+	nav ul {
+		border-width: 1px 0;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: right;
+		margin-top: -40px;
+	}
+
+	nav li {
+		display: inline;
+		padding: 1px;
+	}
+
+	nav li a {
+		position: relative;
+		letter-spacing: 0.10em;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 0.9em;
+		color: white;
+		display: inline-block;
+		padding: 10px;
+	}
+
+	nav li a::after {
+		position: absolute;
+		content: "";
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background: white;
+		transform: scaleX(0);
+		transform-origin: right;
+		transition: transform 0.5s;
+	}
+
+	nav li a:hover::after {
+		transform: scaleX(1);
+		transform-origin: left;
+	}
+
+	/*********************************************************************************/
+	/* Body Styles                                                                   */
+	/*********************************************************************************/
+
+	#page-wrapper {
+		overflow: hidden;
+		padding: 5em 0em;
+		background: #FFF;
+	}
+
+	/*********************************************************************************/
+	/* Display Cards Styles                                                          */
+	/*********************************************************************************/
+
+	#featured {
+		overflow: hidden;
+		text-align: center;
+	}
+
+	#featured .title h2 {
+		margin-bottom: 2em;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+		text-align: center;
+		font-size: 2.6em;
+		color: #000000;
+	}
+
+	#featured h2 {
+		padding-bottom: 1em;
+		text-transform: uppercase;
+		font-size: 1.8em;
+		font-weight: 300;
+		color: #000000;
+	}
+
+	#featured p {
+		text-align: left;
+	}
+
+	#featured img {
+		margin-bottom: 2em;
+	}
+
+	#featured .padding-bottom {
+		margin-bottom: 6em;
+	}
+
+	.tbox1,
+	.tbox2 {
+		width: 490px;
+	}
+
+	.tbox1 {
+		float: left;
+	}
+
+	.tbox2 {
+		float: right;
+	}
+
+	/*********************************************************************************/
+	/* Footer Styles                                                                 */
+	/*********************************************************************************/
+	.footer {
+		overflow: hidden;
+		margin: 0em auto;
+		width: 1200px;
+	}
+
+	.footer p {
+		letter-spacing: 0.20em;
+		text-align: left;
+		text-transform: uppercase;
+		font-size: 0.90em;
+		color: rgba(255, 255, 255, 0.3);
+	}
+
+	.footer a {
+		text-decoration: none;
+		color: rgba(255, 255, 255, 0.5);
+	}
+
+	.footer .boxA {
+		width: 400px;
+		height: 300px;
+		padding: 3em 30px;
+	}
+
+	.footer .boxA h3 {
+		color: #fff;
+		margin-bottom: 1px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	}
+
+	.footer .boxC {
+		width: 400px;
+		height: 300px;
+		padding: 3em 30px;
+	}
+
+	.footer .boxC h3 {
+		color: #fff;
+		margin-bottom: 1px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	}
+
+	.footer h3 {
+		padding-bottom: 1em;
+		text-transform: uppercase;
+		font-size: 1.8em;
+		font-weight: 300;
+	}
+
+	.boxA {
+		float: left;
+	}
+
+	.boxC {
+		float: left;
+	}
+
+	/*********************************************************************************/
+	/* Mobiles and Tablets Display                                                   */
+	/*********************************************************************************/
+	@media(max-width: 1100px) {
+		nav {
+			background: black;
+			border: 1px solid white;
+			text-align: center;
+			width: 100%;
+		}
+
+		label {
+			display: block;
+			cursor: pointer;
+			font-size: 20px;
+			color: white;
+			float: right;
+			margin-right: 20px;
+			position: relative;
+		}
+
+		#toggle {
+			display: none;
+		}
+
+		nav #menu {
+			display: none;
+			width: 100%;
+			clear: right;
+		}
+
+		nav ul {
+			border: 1px solid white;
+			border-width: 1px 0;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+
+		nav li {
+			display: block;
+			border: 1px solid white;
+			padding: 5px;
+		}
+
+		nav li a {
+			font-size: 1em;
+			color: white;
+			display: inline-block;
+			padding: 10px;
+		}
+
+		#toggle:checked+#menu {
+			display: block;
+		}
+
+		#header.container {
+			width: 80%;
+		}
+
+		.footer {
+			width: 90%;
+		}
+
+		#featured.container {
+			width: 90%;
+		}
+	}
+
+	@media(max-width:991px) {
+		body {
+			height: 100%;
+		}
+
+		.container {
+			overflow: hidden;
+			margin: 0em auto;
+			width: 480px;
+		}
+
+		.button {
+			margin-bottom: 20px;
+		}
+
+		.footer {
+			text-align: center;
+		}
+
+		.footer p {
+			text-align: center;
+		}
+
+		.footer .boxA,
+		.footer .boxC {
+			margin-left: 220px;
+		}
+	}

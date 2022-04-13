@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Gaming</title>
+	<meta name="description" content="Main Page">
+	<meta name="author" content="Pham Anh Bao Duy">
+	<meta name="keywords" content="PC, computer, parts, build, built, guides, tips" />
+	<meta name="description" content="This is a Website about Computer parts and how to build PC" />
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+	<link href="css/login.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="https://kit.fontawesome.com/e3d2fd5a9d.js" crossorigin="anonymous"></script>
+	<!-- Credit FontsAwesome  -->
+</head>
+
+<body>
+	<!-- Header -->
+	<div id="header-wrapper">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="index.html">ALFRED</a></h1>
+			</div>
+			<!-- Navigation Menu -->
+			<!-- Referenced and adapted from OnlineTutorials youtube for responsive navigation menu-->
+			<nav>
+				<label for="toggle">&#9776;</label>
+				<input type="checkbox" id="toggle" />
+				<div id="menu">
+					<ul>
+						<li><a href="personalreview.html" accesskey="1">Personal Reviews</a></li>
+						<li><a href="guides.html" accesskey="2">Guides & Tips</a></li>
+						<li><a href="recommendation.html" accesskey="3">Recommendations</a></li>
+						<li><a href="where.html" accesskey="4">Where to buy?</a></li>
+						<li><a href="login.html" accesskey="5">Sign in</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- Log in & Sign up box -->
+	<!-- Referenced and adpated from OnlineTutorials youtube -->
+	<section>
+		<div class="box0" id="form">
+			<!-- Log In box -->
+			<div class="user signinBx">
+				<!-- Image for log in box -->
+				<div class="imgBx">
+					<img src="images/pic02.jpg" height="500" width="700">
+				</div>
+				<!-- Input forms for users -->
+				<div class="formBx">
+					<form>
+						<h2>Sign In</h2>
+						<!-- Check system to display corresponding icons and error message -->
+						<!-- Icons taken form FontsAwesome -->
+						<!-- Referenced and adpated from FlorinPop youtube -->
+						<div class="check">
+							<input type="text" id="username1" placeholder="Username">
+							<i class="fas fa-check-circle"></i>
+							<i class="fas fa-exclamation-circle"></i>
+							<small>Error message</small>
+						</div>
+						<div class="check">
+							<input type="password" id="password1" placeholder="Password">
+							<i class="fas fa-check-circle"></i>
+							<i class="fas fa-exclamation-circle"></i>
+							<small>Error message</small><br>
+						</div>
+						<input type="submit" id="login" value="Login">
+						<!-- Toggle to transition between log in to sign up using javasript -->
+						<p class="signup">Create an account? <a href="#" onclick="toggleForm();">Sign Up.</a></p>
+					</form>
+				</div>
+			</div>
+			<div class="user signupBx">
+				<!-- Input forms for users -->
+				<div class="formBx">
+					<form>
+						<h2>Create an account</h2>
+						<!-- Check system to display corresponding icons and error message -->
+						<!-- Icons taken form FontsAwesome -->
+						<!-- Referenced and adpated from FlorinPop youtube -->
+						<div class="check">
+							<input type="text" id="username2" placeholder="Username">
+							<i class="fas fa-check-circle"></i>
+							<i class="fas fa-exclamation-circle"></i>
+							<small>Error message</small>
+						</div>
+						<div class="check">
+							<input type="email" id="email" placeholder="Email Address">
+							<i class="fas fa-check-circle"></i>
+							<i class="fas fa-exclamation-circle"></i>
+							<small>Error message</small>
+						</div>
+						<div class="check">
+							<input type="password" id="password2" placeholder="Password">
+							<i class="fas fa-check-circle"></i>
+							<i class="fas fa-exclamation-circle"></i>
+							<small>Error message</small>
+						</div>
+						<div class="check">
+							<input type="password" id="confirmation" placeholder="Confirm Password">
+							<i class="fas fa-check-circle"></i>
+							<i class="fas fa-exclamation-circle"></i>
+							<small>Error message</small><br>
+						</div>
+						<input type="submit" id="" value="Sign Up">
+						<!-- Toggle to transition from sign up to log in using javasript -->
+						<p class="signup">Already have an account? <a href="#" onclick="toggleForm();">Sign in.</a></p>
+					</form>
+				</div>
+				<!-- Image for Sign up box -->
+				<div class="imgBx">
+					<img src="images/pic03.jpg" height="500" width="700">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Calling javascript for validating and animating the log in page -->
+	<script src="js/animation.js"></script>
+</body>
+</html>
